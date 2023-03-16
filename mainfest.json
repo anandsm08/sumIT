@@ -1,0 +1,21 @@
+{
+    "manifest_version" : 3,
+    "name":"SumIT",
+    "version":"1.0.0",
+    "description":"A tool that summarizes all your meetings.",
+
+    "action": {...},
+    "default_locale": "en",
+    "description": "A plain text description",
+    "icons": {...},
+
+    "content_scripts" : [
+        {
+            "js":[
+                "scripts/content.js"
+            ],
+            "matches"
+        }
+    ]
+
+}
