@@ -1,0 +1,97 @@
+html{
+    background-color: black;
+}
+
+
+.main_extension_ui{
+width: 400px;
+height: 400px;
+background: #D9D9D9;
+border-radius: 20px;
+}
+
+
+.extension_heading{
+margin-top: 10px;
+width: 342px;
+height: 57px;
+font-family: 'STIX Two Math';
+font-style: normal;
+font-weight: 400;
+font-size: 45px;
+line-height: 56px;
+/* identical to box height */
+text-align: center;
+}
+
+
+
+
+    
+/* toggle in label designing */
+.toggle {
+    position : relative ;
+    display : inline-block;
+    width: 158px;
+    height: 55px;
+    background-color:rgba(47, 47, 71, 0.67);
+    border-radius: 30px;
+    margin-left:10px;
+    margin-top: 50px;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.45);
+}
+    
+/* After slide changes */
+.toggle:after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    top: 2.7px;
+    left: 4px;
+    transition: all 0.5s;
+    align-items: center;
+}
+    
+/* Toggle text */
+
+    
+/* Checkbox checked effect */
+.checkbox:checked + .toggle::after {
+    left : 104px;
+}
+    
+/* Checkbox checked toggle label bg color */
+.checkbox:checked + .toggle {
+    background: #7474DD;
+}
+    
+/* Checkbox vanished */
+.checkbox {
+    display : none;
+}
+
+.btn{
+    font-weight: 400;
+    font-size: 35px;
+    top: 10px;
+    line-height: 44px;
+    margin-left:10px;
+    margin-top: 50px;
+    background: #7474DD;
+    border-radius: 30px;
+    width: 382px;
+    height: 62px;
+}
+.text_btn{
+    color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 382px;
+    height: 62px;
+    font-family: 'STIX Two Math';
+    font-style: normal;
+}
