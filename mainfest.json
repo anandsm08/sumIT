@@ -7,7 +7,10 @@
     "action": {...},
     "default_locale": "en",
     "description": "A plain text description",
-    "icons": {...},
+    "icons": {
+        "16":"iconsx50.png",
+        "48":"iconsx100.png"
+    },
 
     "content_scripts" : [
         {
@@ -16,7 +19,7 @@
             ],
             "matches":
         }
-    ]
+    ],
 
     "browser_action":{
         "default_popup":"extension.html",
