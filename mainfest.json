@@ -4,9 +4,9 @@
     "version":"1.0.0",
     "description":"A tool that summarizes all your meetings.",
 
-    "action": {...},
+    
     "default_locale": "en",
-    "description": "A plain text description",
+    
     "icons": {
         "16":"iconsx50.png",
         "48":"iconsx100.png"
@@ -15,15 +15,24 @@
     "content_scripts" : [
         {
             "js":[
-                "scripts/content.js"
+                "scripts/content.js",
+                "jquery.min.js"
             ],
-            "matches":
+            "matches":[
+                "https://meet.google.com"
+            ]
         }
     ],
 
     "browser_action":{
         "default_popup":"extension.html",
         "default_title":"SumIT"
-    }
+    },
 
+    "permissions":[
+        "tabs",
+        "http://*/",
+        "storage",
+        "notifications"
+    ]
 }
