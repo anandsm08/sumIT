@@ -1,0 +1,56 @@
+body{
+    padding: 30px;
+    background-color:beige!important;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif  !important;
+}
+
+.main_landing{
+    margin:10px;
+}
+
+.btn_file{
+    position: absolute;
+    left:calc(100vw - 200px);
+    align-self:flex-end;
+    margin: 10px;
+    width: 160px;
+    height: 40px;
+    background-color: #0d6cfd;
+    color: white;
+    border:none;
+    border-radius: 10px;
+}
+
+.donut_container{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    
+    margin-top: 20px;
+}
+
+.out_donut{
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    background: conic-gradient(#ff0000 0% 25%,beige 25% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.in_donut{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-color:beige;
+    border: 1px solid black;
+}
+
+.Pie_info{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+}
